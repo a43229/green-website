@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renewable Energy & The Future</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f4f9f4;
+        }
+
+        header {
+            background: #2d5a27;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #a8e063;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1466611653911-95282fc3656b?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 50px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+        }
+
+        /* Content Sections */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 60px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .section-text {
+            flex: 1;
+        }
+
+        .section-image {
+            flex: 1;
+        }
+
+        .section-image img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .section-image img:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #2d5a27;
+            border-bottom: 2px solid #a8e063;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* Call to Action */
+        .cta {
+            background: #2d5a27;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .section, .section:nth-child(even) {
+                flex-direction: column;
+            }
+            .hero h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#solar">Solar</a>
+            <a href="#wind">Wind</a>
+            <a href="#future">Future</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Renewable Energy</h1>
+        <p>Powering a sustainable future for the next generations through innovation and clean technology.</p>
+    </section>
+
+    <div class="container">
+        
+        <section class="section" id="solar">
+            <div class="section-text">
+                <h2>Solar Power</h2>
+                <p>Solar energy is the most abundant energy resource on Earth. By capturing sunlight using photovoltaic panels, we can generate electricity without emitting greenhouse gases. It is a key pillar in the global transition to net-zero emissions.</p>
+                <ul>
+                    <li>Infinite resource</li>
+                    <li>Low maintenance costs</li>
+                    <li>Reduces electricity bills</li>
+                </ul>
+            </div>
+            <div class="section-image">
+                <img src="https://images.unsplash.com/photo-1509391366360-fe5bb584850a?auto=format&fit=crop&q=80&w=600" alt="Solar Panels">
+            </div>
+        </section>
+
+        <section class="section" id="wind">
+            <div class="section-text">
+                <h2>Wind Energy</h2>
+                <p>Wind turbines harness the kinetic energy of moving air to create electricity. Whether onshore or offshore, wind farms are becoming a dominant force in the global energy mix, providing clean power to millions of homes.</p>
+                <p>Modern technology has made turbines quieter and more efficient, allowing them to operate even in low-wind conditions.</p>
+            </div>
+            <div class="section-image">
+                <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=600" alt="Wind Turbines">
+            </div>
+        </section>
+
+        <section class="section" id="future">
+            <div class="section-text">
+                <h2>The Future of Our Planet</h2>
+                <p>Transitioning to renewable energy is not just about technology; it's about survival. By investing in Green Hydrogen, Geothermal energy, and better Battery Storage, we can ensure a stable and healthy climate.</p>
+                <p>The goal is to move away from fossil fuels and create a circular economy where energy is clean, affordable, and accessible to everyone.</p>
+            </div>
+            <div class="section-image">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=600" alt="Green Mountains">
+            </div>
+        </section>
+
+    </div>
+
+    <section class="cta">
+        <h2>Join the Green Revolution</h2>
+        <p>Small changes lead to big impacts. Support clean energy today.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Renewable Energy Awareness. Created for a better future.</p>
+    </footer>
+
+</body>
+</html>
