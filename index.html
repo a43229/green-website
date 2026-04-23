@@ -1,211 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renewable Energy & The Future</title>
+    <title>EcoPulse | Global Renewable Energy Leader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* General Styles */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            color: #333;
-            background-color: #f4f9f4;
-        }
-
-        header {
-            background: #2d5a27;
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #a8e063;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 80vh;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                        url('https://images.unsplash.com/photo-1466611653911-95282fc3656b?auto=format&fit=crop&q=80&w=1600');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            padding: 0 20px;
-            margin-top: 50px;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.5rem;
-            max-width: 800px;
-        }
-
-        /* Content Sections */
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .section {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-            margin-bottom: 60px;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-
-        .section:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-
-        .section-text {
-            flex: 1;
-        }
-
-        .section-image {
-            flex: 1;
-        }
-
-        .section-image img {
-            width: 100%;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-
-        .section-image img:hover {
-            transform: scale(1.05);
-        }
-
-        h2 {
-            color: #2d5a27;
-            border-bottom: 2px solid #a8e063;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-
-        /* Call to Action */
-        .cta {
-            background: #2d5a27;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        /* Footer */
-        footer {
-            background: #1a1a1a;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .section, .section:nth-child(even) {
-                flex-direction: column;
-            }
-            .hero h1 { font-size: 2.5rem; }
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
     </style>
 </head>
-<body>
+<body class="bg-white text-slate-900 leading-relaxed">
 
-    <header>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#solar">Solar</a>
-            <a href="#wind">Wind</a>
-            <a href="#future">Future</a>
-        </nav>
-    </header>
+    <nav class="fixed w-full z-50 glass-nav border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fas fa-leaf text-green-600 text-3xl"></i>
+                <span class="text-2xl font-extrabold tracking-tighter uppercase">EcoPulse</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-bold uppercase tracking-widest text-slate-500">
+                <a href="#home" class="hover:text-green-600 transition">Home</a>
+                <a href="#solutions" class="hover:text-green-600 transition">Solutions</a>
+                <a href="#benefits" class="hover:text-green-600 transition">Benefits</a>
+                <a href="#faq" class="hover:text-green-600 transition">FAQ</a>
+                <a href="#contact" class="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    <section class="hero" id="home">
-        <h1>Renewable Energy</h1>
-        <p>Powering a sustainable future for the next generations through innovation and clean technology.</p>
+    <section id="home" class="pt-32 pb-20 lg:pt-52 lg:pb-40 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="inline-block px-4 py-1.5 bg-green-100 text-green-700 text-xs font-black uppercase tracking-widest rounded-full mb-6">Climate Action 2026</span>
+                <h1 class="text-6xl lg:text-8xl font-extrabold text-slate-900 leading-tight mb-8">
+                    Investing in a <span class="text-green-600 italic">Cleaner</span> Future.
+                </h1>
+                <p class="text-xl text-slate-600 mb-10 max-w-xl">
+                    Renewable energy is the backbone of a sustainable economy. We help people and businesses switch to power sources that respect the planet.
+                </p>
+                <div class="flex gap-5">
+                    <a href="#solutions" class="px-10 py-5 bg-slate-900 text-white rounded-2xl font-bold hover:bg-black transition shadow-xl">Get Started</a>
+                    <a href="#benefits" class="px-10 py-5 border-2 border-slate-200 text-slate-700 rounded-2xl font-bold hover:bg-white transition">Why us?</a>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://images.pexels.com/photos/157502/pexels-photo-157502.jpeg?auto=compress&cs=tinysrgb&w=1200" class="rounded-[3rem] shadow-2xl w-full h-[500px] object-cover" alt="Renewable Hero">
+            </div>
+        </div>
     </section>
 
-    <div class="container">
-        
-        <section class="section" id="solar">
-            <div class="section-text">
-                <h2>Solar Power</h2>
-                <p>Solar energy is the most abundant energy resource on Earth. By capturing sunlight using photovoltaic panels, we can generate electricity without emitting greenhouse gases. It is a key pillar in the global transition to net-zero emissions.</p>
-                <ul>
-                    <li>Infinite resource</li>
-                    <li>Low maintenance costs</li>
-                    <li>Reduces electricity bills</li>
-                </ul>
+    <section id="solutions" class="py-32 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <h2 class="text-4xl lg:text-6xl font-extrabold mb-6">Our Technologies</h2>
+                <p class="text-xl text-slate-500 max-w-2xl mx-auto">Deep dive into the methods we use to power the modern world sustainably.</p>
             </div>
-            <div class="section-image">
-                <img src="https://images.unsplash.com/photo-1509391366360-fe5bb584850a?auto=format&fit=crop&q=80&w=600" alt="Solar Panels">
-            </div>
-        </section>
 
-        <section class="section" id="wind">
-            <div class="section-text">
-                <h2>Wind Energy</h2>
-                <p>Wind turbines harness the kinetic energy of moving air to create electricity. Whether onshore or offshore, wind farms are becoming a dominant force in the global energy mix, providing clean power to millions of homes.</p>
-                <p>Modern technology has made turbines quieter and more efficient, allowing them to operate even in low-wind conditions.</p>
-            </div>
-            <div class="section-image">
-                <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=600" alt="Wind Turbines">
-            </div>
-        </section>
+            <div class="grid md:grid-cols-3 gap-12 text-left">
+                <div class="group bg-slate-50 p-10 rounded-[3rem] border border-slate-100 hover:shadow-2xl transition duration-500">
+                    <div class="w-16 h-16 bg-orange-500 text-white rounded-2xl flex items-center justify-center text-3xl mb-8">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Photovoltaic Solar</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed text-sm">
+                        Solar energy works by capturing sunlight through photovoltaic cells. These cells convert light photons into electrons, generating direct current (DC) electricity. It is silent, has no moving parts, and provides decentralised power to millions.
+                    </p>
+                    <ul class="text-xs space-y-2 mb-8 text-slate-500 font-bold uppercase tracking-wider">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Low Maintenance</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Modular Scaling</li>
+                    </ul>
+                    <img src="https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=800" class="rounded-3xl h-48 w-full object-cover">
+                </div>
 
-        <section class="section" id="future">
-            <div class="section-text">
-                <h2>The Future of Our Planet</h2>
-                <p>Transitioning to renewable energy is not just about technology; it's about survival. By investing in Green Hydrogen, Geothermal energy, and better Battery Storage, we can ensure a stable and healthy climate.</p>
-                <p>The goal is to move away from fossil fuels and create a circular economy where energy is clean, affordable, and accessible to everyone.</p>
-            </div>
-            <div class="section-image">
-                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=600" alt="Green Mountains">
-            </div>
-        </section>
+                <div class="group bg-slate-50 p-10 rounded-[3rem] border border-slate-100 hover:shadow-2xl transition duration-500">
+                    <div class="w-16 h-16 bg-blue-500 text-white rounded-2xl flex items-center justify-center text-3xl mb-8">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Wind Kinetics</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed text-sm">
+                        Wind turbines use the kinetic energy of the air to turn propeller-like blades around a rotor. The rotor is connected to the main shaft, which spins a generator to create electricity. Modern offshore farms can power entire cities.
+                    </p>
+                    <ul class="text-xs space-y-2 mb-8 text-slate-500 font-bold uppercase tracking-wider">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> High Power Output</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Small Land Footprint</li>
+                    </ul>
+                    <img src="https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=800" class="rounded-3xl h-48 w-full object-cover">
+                </div>
 
-    </div>
-
-    <section class="cta">
-        <h2>Join the Green Revolution</h2>
-        <p>Small changes lead to big impacts. Support clean energy today.</p>
+                <div class="group bg-slate-50 p-10 rounded-[3rem] border border-slate-100 hover:shadow-2xl transition duration-500">
+                    <div class="w-16 h-16 bg-emerald-500 text-white rounded-2xl flex items-center justify-center text-3xl mb-8">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Hydropower</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed text-sm">
+                        Hydropower systems use the force of moving water to rotate a turbine. This turbine then spins a generator to produce electricity. It is the most reliable renewable source because it can provide a constant flow of energy regardless of weather.
+                    </p>
+                    <ul class="text-xs space-y-2 mb-8 text-slate-500 font-bold uppercase tracking-wider">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Constant Supply</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Long Lifespan</li>
+                    </ul>
+                    <img src="https://images.pexels.com/photos/335887/pexels-photo-335887.jpeg?auto=compress&cs=tinysrgb&w=800" class="rounded-3xl h-48 w-full object-cover">
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Renewable Energy Awareness. Created for a better future.</p>
-    </footer>
-
-</body>
-</html>
+    <section id="benefits" class="py-32 bg-slate-900 text-white px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="text-4xl lg:text-6xl font-black mb-8">Why Switch to <span class="text-green-500">Renewables</span>?</h2>
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="text-green-500 text-2xl font-bold italic">01.</div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Zero Emissions</h4>
+                            <p class="text-slate-400">Unlike fossil fuels, renewable sources do not release carbon dioxide (CO2) or harmful pollutants during operation.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-green-500 text-2xl font-bold italic">02.</div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Economic Savings</h4>
+                            <p class="text-slate-400">Once the infrastructure is built, the "fuel" (sun, wind, water) is free, leading to much lower long-term costs.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-green-500 text-2xl font-bold italic">
